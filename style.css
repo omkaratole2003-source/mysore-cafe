@@ -1,0 +1,259 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#fffaf4;
+color:#333;
+}
+
+header{
+background:#5d2d0c;
+color:white;
+padding:15px 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200');
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero p{
+font-size:22px;
+margin:20px 0;
+}
+
+.btn{
+background:#ff9800;
+padding:12px 25px;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+.menu{
+padding:60px 20px;
+text-align:center;
+}
+
+.menu h2{
+font-size:40px;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+margin:15px;
+}
+
+.card p{
+color:#666;
+margin-bottom:10px;
+}
+
+.card span{
+display:block;
+font-size:22px;
+color:#e65100;
+font-weight:bold;
+padding-bottom:20px;
+}
+
+.about,.contact{
+padding:60px 20px;
+text-align:center;
+}
+
+footer{
+background:#5d2d0c;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:10px;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.gallery{
+padding:60px 20px;
+text-align:center;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+margin-top:30px;
+}
+
+.gallery-grid img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+transition:.3s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+
+.map{
+padding:60px 20px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+html{
+scroll-behavior:smooth;
+}
+html{
+  scroll-behavior:smooth;
+}
+
+.btn{
+  display:inline-block;
+  background:#ff9800;
+  color:white;
+  padding:12px 25px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:.3s;
+}
+
+.btn:hover{
+  background:#e68900;
+  transform:scale(1.05);
+}
+
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:15px 20px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:bold;
+  box-shadow:0 5px 15px rgba(0,0,0,.3);
+}
+
+.whatsapp:hover{
+  transform:scale(1.05);
+}
+
+.card img,
+.gallery-grid img{
+  width:100%;
+  object-fit:cover;
+}
+.qty{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:15px;
+margin:15px;
+}
+
+.qty button{
+width:35px;
+height:35px;
+border:none;
+background:#8B0000;
+color:white;
+font-size:20px;
+border-radius:50%;
+cursor:pointer;
+}
+
+.bill{
+max-width:500px;
+margin:40px auto;
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.bill p,.bill h3{
+display:flex;
+justify-content:space-between;
+margin:10px 0;
+}
+}
